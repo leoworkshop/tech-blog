@@ -32,6 +32,24 @@ Hello World!
 
 Hello Cathy!
 
+# Mysql Prepare
+
+`CREATE SCHEMA `kbf` DEFAULT CHARACTER SET utf8 ;`
+
+```
+CREATE  TABLE `kbf`.`tbl_sample` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(45) NULL ,
+  PRIMARY KEY (`id`) );
+```
+
+# MySQL に接続する
+
+Spring Boot + Spring JDBC (JdbcTemplate など) で MySQL に接続する.
+
+
+![spring-mysql-init](images/spring-mysql-init.png)
+
 # エラー対応
 
 ## Web server failed to start. Port 8080 was already in use.
