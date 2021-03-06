@@ -3,6 +3,34 @@
 https://start.spring.io/
 
 
+![spring-initializr-create](images/spring-initializr-create.png)
+
+生成した leosoft.zip をダウンロードして、ワークスペースに解凍する。
+
+`unzip leosoft.zip`
+
+# ソース修正
+
+改修内容、下記のURLで確認してください。
+
+https://spring.io/quickstart
+
+# RUN
+
+`cd java/spring/cathy/leosoft`
+
+`$ ./mvnw spring-boot:run`
+
+# ACCESS
+
+`$ curl http://localhost:8080/hello`
+
+Hello World!
+
+
+`$ curl http://localhost:8080/hello?name=Cathy`
+
+Hello Cathy!
 
 # エラー対応
 
@@ -21,4 +49,16 @@ java      99189 jinghuizhen   36u  IPv6 0x830dcbcf090ac895      0t0  TCP *:8080 
 
 `$ ./mvnw spring-boot:run`
 
+# Git
 
+## ワークスペース
+
+/Users/jinghuizhen/tech-blog
+
+## コマンド
+
+`$ git add - A`
+
+`$ git commit -m "[java][spring][cathy]hello sample"`
+
+`$ git push`
